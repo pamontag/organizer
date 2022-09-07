@@ -49,7 +49,7 @@ jobs:
       - name: Deploy Backend
         uses: azure/webapps-deploy@v2
         with:
-          app-name: ${{ secrets.APPSERVICENAME }}
+          app-name: eobe
           package: ./deploy
         
 
