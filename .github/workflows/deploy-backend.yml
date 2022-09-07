@@ -20,7 +20,7 @@ jobs:
 
       - uses: azure/login@v1
         with:
-          creds: '{"clientId":"20f5a976-6f07-45bb-b561-d2c0ec0c9d4c","clientSecret":"zq98Q~LqOeFxt1mqabR6ZudLtO~1dUdHP~Gsxa6I","subscriptionId":"03921eee-6754-4703-9e16-d3d413e699e0","tenantId":"ca377301-5bfd-497d-9581-7dd975ecaa0e","resourceManagerEndpointUrl":"https://management.azure.com/"}'
+          creds: ${{ secrets.AZURE_SERVICE_PRINCIPAL }}
           
       - name: Extract branch name
         shell: bash
