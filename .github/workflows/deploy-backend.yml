@@ -51,6 +51,7 @@ jobs:
         with:
           app-name: eobe
           package: ./deploy
+          publish-profile: ${{ secrets.azureWebAppPublishProfile }}
         
 
    
