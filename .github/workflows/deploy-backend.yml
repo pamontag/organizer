@@ -45,7 +45,7 @@ jobs:
       
       - name: Verify app service
         run: |
-          az webapp az webapp list --resource-group engagementorganizerbe
+          az webapp list --resource-group engagementorganizerbe
 
       - name: Deploy Backend
         uses: azure/webapps-deploy@v2
