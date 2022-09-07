@@ -42,6 +42,10 @@ jobs:
         env:
           ApiKeys: ${{ secrets.APPSERVICE_CONFIG_APIKEY }}
           DatabasePath: 'Organizer.db'
+      
+      - name: Verify app service
+        run: |
+          az webapp config appsettings list --name engagementorganizerbe --resource-group engagementorganizerbe --subscription ea6ef120-a22a-45d2-8b14-3c8ab7bbe3f0
 
       - name: Deploy Backend
         uses: azure/webapps-deploy@v2
